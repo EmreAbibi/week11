@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+			<body>
+						<table border = 1>
+									<thead>
+												<td>EmpID</td>
+												<td>EmpName</td>
+												<td>EmpGender</td>
+												<td>EmpPhone</td>
+                        <td>EmpBdate</td>
+									</thead>
+								
+									{% for row in rows %}
+												<tr>
+															<td>{{row["EmpId"]}}</td>
+															<td>{{row["EmpName"]}}</td>
+															<td>{{row["EmpGender"]}}</td>
+															<td>{{row['EmpPhone']}}</td>		
+                              <td>{{row['EmpBdate']}}</td>	
+												</tr>
+									{% endfor %}
+						</table>
+						
+						<a href = "http://localhost:5000/">Home</a>
+			</body>
+</html>
